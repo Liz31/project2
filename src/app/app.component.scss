@@ -1,0 +1,14 @@
+@import "~theme/variables";
+
+nav {
+	a.active {
+		background-color: $gray-300;
+	}
+}
+
+footer {
+	text-align: center;
+	img {
+		border-radius: 50px;
+	}
+}
