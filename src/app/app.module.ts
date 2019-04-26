@@ -15,13 +15,15 @@ import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
-import { AboutComponent } from './about';
+import { ImageComponent } from './image';
+import { MoodBoardComponent } from './mood-board';
+import { AboutMeComponent } from './about-me';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 import { DevModuleModule } from './+dev-module';
 
 import '../styles/styles.scss';
-import '../styles/headings.css';
+import '../styles/headings.scss';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -42,8 +44,10 @@ interface StoreType {
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
-    AboutComponent,
+    AboutMeComponent,
     HomeComponent,
+		ImageComponent,
+		MoodBoardComponent,
     NoContentComponent,
     XLargeDirective
   ],
